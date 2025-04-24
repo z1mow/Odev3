@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01D80ED22DBA554F00082871 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 01D80ED12DBA554F00082871 /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		01D80E722DBA4DE800082871 /* Odev3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odev3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D80ED82DBA561F00082871 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D80ED22DBA554F00082871 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				01D80E742DBA4DE800082871 /* Odev3 */,
+				01D80ED72DBA561F00082871 /* Frameworks */,
 				01D80E732DBA4DE800082871 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +63,14 @@
 				01D80E722DBA4DE800082871 /* Odev3.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		01D80ED72DBA561F00082871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D80ED82DBA561F00082871 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +93,7 @@
 			);
 			name = Odev3;
 			packageProductDependencies = (
+				01D80ED12DBA554F00082871 /* RxSwift */,
 			);
 			productName = Odev3;
 			productReference = 01D80E722DBA4DE800082871 /* Odev3.app */;
@@ -95,6 +111,7 @@
 				TargetAttributes = {
 					01D80E712DBA4DE800082871 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -107,6 +124,9 @@
 			);
 			mainGroup = 01D80E692DBA4DE800082871;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01D80ED02DBA554F00082871 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 01D80E732DBA4DE800082871 /* Products */;
 			projectDirPath = "";
@@ -143,6 +163,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -160,6 +181,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakirogut.Odev3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Odev3/Odev3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -170,6 +193,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -187,6 +211,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sakirogut.Odev3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Odev3/Odev3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01D80ED02DBA554F00082871 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01D80ED12DBA554F00082871 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01D80ED02DBA554F00082871 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01D80E6A2DBA4DE800082871 /* Project object */;
 }
